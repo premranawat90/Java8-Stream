@@ -12,7 +12,9 @@ public class StreamGenerator {
 
 		System.out.println("Using Array-->");
 		int i = 0;
-		StreamGenerator.generateStreamUsingArray().forEach(y -> System.out.println(y[i]));
+		StreamGenerator.generateStreamUsingArray().forEach(y -> {
+			System.out.println(y[i]);
+		});
 	}
 
 	private static Stream<int[]> generateStreamUsingArray() {
